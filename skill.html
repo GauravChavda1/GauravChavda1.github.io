@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaurav's Portfolio - Experience</title>
+  <link rel="icon" href="Image/engineer.ico" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="skill.css" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body class="container-fluid body_section">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand brand-name" href="#">Gaurav Chavda</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link headerachor" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="skill.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="contact.html">Contact Me</a></li>
+          <li><iframe id="toggle-iframe" onload="onIframeLoad()" src="toggle.html"></iframe></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="Section1">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <img class="skill-img" src="Image/experience.png" alt="Experience Image"
+          style="max-width: 100%; height: auto; width: 300px;" />
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div id="ExperienceBox">
+          <center class="Skill-heading">Experience</center>
+
+          <div class="experience-entry mb-4">
+            <h5>Flutter Developer - XYZ Solutions</h5>
+            <p><strong>Duration:</strong> Jan 2023 - Present</p>
+            <p><strong>Role:</strong> Developed cross-platform mobile apps using Flutter and Dart. Integrated REST APIs
+              and maintained state management with Provider.</p>
+          </div>
+
+          <div class="experience-entry mb-4">
+            <h5>Intern - ABC Technologies</h5>
+            <p><strong>Duration:</strong> Jun 2022 - Dec 2022</p>
+            <p><strong>Role:</strong> Assisted in developing IoT-based mobile applications and worked on Bluetooth
+              communication with embedded devices.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">Made with ❤️ by Gaurav Chavda</footer>
+  <script src="dark-mode.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience - Gaurav Chavda</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .experience .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .experience .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body class="container-fluid body_section">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand brand-name" href="#">Gaurav Chavda</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="Section1">
+    <h2 class="text-center my-4">Work Experience</h2>
+    <div class="experience">
+      <div class="card mb-3 p-3">
+        <div class="card-body">
+          <h5 class="card-title">ABC Tech Solutions</h5>
+          <p class="card-text">Flutter Developer | Jan 2023 - Aug 2023</p>
+          <p class="card-text">Developed IoT device apps with Bluetooth integration for seamless communication.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 p-3">
+        <div class="card-body">
+          <h5 class="card-title">XYZ Farming Equipment</h5>
+          <p class="card-text">Sales Manager | Sep 2022 - Dec 2022</p>
+          <p class="card-text">Managed sales for farming machines, driving sales growth and customer satisfaction.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 p-3">
+        <div class="card-body">
+          <h5 class="card-title">DEF Software Pvt Ltd</h5>
+          <p class="card-text">Flutter Developer | Feb 2022 - Aug 2022</p>
+          <p class="card-text">Developed and maintained mobile apps with user-centric designs and robust performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">Made with ❤️ by Gaurav Chavda</footer>
+</body>
+
+</html> -->
