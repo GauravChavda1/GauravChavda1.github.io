@@ -10,7 +10,6 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <link rel="stylesheet" href="project.css" />
   <link rel="stylesheet" href="dark-mode.css" />
-
   <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
@@ -26,17 +25,51 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZXPVQDR2Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+  <style>
+    .P-heading {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-top: 2rem;
+    }
 
-  gtag("config", "G-WZXPVQDR2Q");
-</script>
+    .p-text {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 1rem;
+    }
+
+    .project-section {
+      padding: 60px 0;
+    }
+
+    .card-title i {
+      font-size: 1.4rem;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+      font-size: 1rem;
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
 
 <body class="container-fluid body_section">
   <header>
@@ -49,112 +82,86 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="education.html">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="skill.html">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="project.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link headerachor" href="contact.html">Contact Me</a>
-          </li>
-          <li>
-            <iframe id="toggle-iframe" onload="onIframeLoad()" src="toggle.html"></iframe>
-          </li>
+          <li class="nav-item"><a class="nav-link headerachor" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="skill.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link headerachor" href="contact.html">Contact Me</a></li>
+          <li><iframe id="toggle-iframe" onload="onIframeLoad()" src="toggle.html"></iframe></li>
         </ul>
       </div>
     </nav>
   </header>
-  <section id="Projects" class="Section1">
-    <div class="row">
-      <div class="col-lg-6 col-md-6">
-        <img class="projectimage" src="Image/Project.svg" alt="" />
-      </div>
-      <div class="col-lg-6 col-md-6 project-heading">
-        <h1 class="P-heading">Projects</h1>
-        <p class="p-text">
-          Here are some of the projects I've built using Flutter and other modern technologies. Each project reflects my focus on
-          clean UI, responsive design, and practical functionality. More exciting projects are on the way
-        </p>
-      </div>
-    </div>
-  <div class="row Section1">
-    <!-- CricPg Project -->
-  <div class="row">
-    <!-- CricPg -->
-    <div class="col-md-6 mb-4">
-      <div class="card border-0 shadow-lg rounded-3 h-100">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold mb-3">
-            <i class="fas fa-baseball-ball mr-2 text-primary"></i>CricPg - Live Cricket Scores
-          </h5>
-          <p class="card-text">
-            A Flutter app offering live scores, past and upcoming match details with real-time updates via REST API and
-            Firebase.
-          </p>
-          <p class="text-muted mb-2"><strong>Tech Stack:</strong> Flutter, REST API, Firebase</p>
-          <a href="https://play.google.com/store/apps/details?id=com.iottive.cricket_app" target="_blank"
-            class="btn btn-sm btn-outline-primary">View on Play Store</a>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Batsys -->
-    <div class="col-md-6 mb-4">
-      <div class="card border-0 shadow-lg rounded-3 h-100">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold mb-3">
-            <i class="fas fa-building mr-2 text-success"></i>Batsys – CRM Software
-          </h5>
-          <p class="card-text">
-            A CRM system with modules for plot/client management, invoicing, team performance, and secure payment
-            handling.
-          </p>
-          <p class="text-muted mb-0"><strong>Tech Stack:</strong> Flutter, Firebase, REST API, Razorpay</p>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Pulse Ring -->
-    <div class="col-md-6 mb-4">
-      <div class="card border-0 shadow-lg rounded-3 h-100">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold mb-3">
-            <i class="fas fa-heartbeat mr-2 text-danger"></i>Pulse Ring – Health Monitoring App
-          </h5>
-          <p class="card-text">
-            Cross-platform app to monitor heart rate, sleep, stress, and steps. Offers personalized health insights and
-            tracking.
-          </p>
-          <p class="text-muted mb-0"><strong>Tech Stack:</strong> Flutter, Bluetooth, Firebase, Google Fit API</p>
-        </div>
-      </div>
-    </div>
-  
-    <!-- DigiCash -->
-    <div class="col-md-6 mb-4">
-      <div class="card border-0 shadow-lg rounded-3 h-100">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold mb-3">
-            <i class="fas fa-wallet mr-2 text-warning"></i>DigiCash – Wallet Transfer App
-          </h5>
-          <p class="card-text">
-            Digital wallet with secure wallet-to-wallet transfers, real-time balances, history, and PIN-protected access.
-          </p>
-          <p class="text-muted mb-0"><strong>Tech Stack:</strong> Flutter, Firebase, Provider (MVVM), REST API, Razorpay
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
+  <section id="Projects" class="project-section">
+    <div class="text-center">
+      <h1 class="P-heading">Projects</h1>
+      <p class="p-text mx-auto" style="max-width: 800px">
+        Here are some of the projects I've built using Flutter and other modern technologies. Each project reflects my
+        focus on
+        clean UI, responsive design, and practical functionality. More exciting projects are on the way.
+      </p>
+    </div>
 
+    <div class="row justify-content-center mt-5">
+      <!-- CricPg -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-lg rounded-3 h-100">
+          <img src="https://via.placeholder.com/350x200" alt="CricPg Screenshot" class="project-image">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold mb-3"><i class="fas fa-baseball-ball mr-2 text-primary"></i>CricPg -
+              Live Cricket Scores</h5>
+            <p class="card-text">A Flutter app offering live scores, past and upcoming match details with real-time
+              updates via REST API and Firebase.</p>
+            <p class="text-muted mb-2"><strong>Tech Stack:</strong> Flutter, REST API, Firebase</p>
+            <a href="https://play.google.com/store/apps/details?id=com.iottive.cricket_app" target="_blank"
+              class="btn btn-sm btn-outline-primary">View on Play Store</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Batsys -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-lg rounded-3 h-100">
+          <img src="https://via.placeholder.com/350x200" alt="Batsys Screenshot" class="project-image">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold mb-3"><i class="fas fa-building mr-2 text-success"></i>Batsys – CRM
+              Software</h5>
+            <p class="card-text">A CRM system with modules for plot/client management, invoicing, team performance, and
+              secure payment handling.</p>
+            <p class="text-muted mb-0"><strong>Tech Stack:</strong> Flutter, Firebase, REST API, Razorpay</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulse Ring -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-lg rounded-3 h-100">
+          <img src="https://via.placeholder.com/350x200" alt="Pulse Ring Screenshot" class="project-image">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold mb-3"><i class="fas fa-heartbeat mr-2 text-danger"></i>Pulse Ring –
+              Health Monitoring App</h5>
+            <p class="card-text">Cross-platform app to monitor heart rate, sleep, stress, and steps. Offers personalized
+              health insights and tracking.</p>
+            <p class="text-muted mb-0"><strong>Tech Stack:</strong> Flutter, Bluetooth, Firebase, Google Fit API</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DigiCash -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-lg rounded-3 h-100">
+          <img src="https://via.placeholder.com/350x200" alt="DigiCash Screenshot" class="project-image">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold mb-3"><i class="fas fa-wallet mr-2 text-warning"></i>DigiCash –
+              Wallet Transfer App</h5>
+            <p class="card-text">Digital wallet with secure wallet-to-wallet transfers, real-time balances, history, and
+              PIN-protected access.</p>
+            <p class="text-muted mb-0"><strong>Tech Stack:</strong> Flutter, Firebase, Provider (MVVM), REST API</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">Made with ❤️ by Gaurav Chavda</footer>
